@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>COVID-19</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="static/css/styles.css">
+    </head>
+    <body>
+        <div class="container pt-5">
+            <h1 class="text-center mb-5">COVID-19 GUATEMALA</h1>
+            <form name="form" onsubmit="event.preventDefault(); addRegister(form.data);" id="form">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="data" placeholder="Datos de entrada" name="data">
+                    <small id="entryError" class="form-text text-danger hidden">Revise el formato de los datos de entrada.</small>
+                </div>
+            </form>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Codigo</th>
+                        <th>Departamento</th>
+                        <th>Cantidad de Fallecidos</th>
+                        <th>Cantidad de Contagiados</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+        <script src="static/js/script.js"></script>
+    </body>
+</html>
